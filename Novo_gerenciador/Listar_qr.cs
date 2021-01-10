@@ -51,10 +51,7 @@ namespace Novo_gerenciador
                 System.Drawing.Bitmap myImg = new System.Drawing.Bitmap(qr_selected);
 
                // qr.Decode(myImg);
-                if ( != null)
-                {
-                    //.. success
-                }
+               
             }
             else
             {

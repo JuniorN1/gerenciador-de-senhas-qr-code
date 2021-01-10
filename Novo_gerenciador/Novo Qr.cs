@@ -68,8 +68,8 @@ namespace Novo_gerenciador
                 "| SENHA:" + Tb_Senha.Text
                  + "\n______________________________\n" ;
                 imageQRCode = qrCodecEncoder.Encode(dados);
-                Pb_Qr_preview.BackgroundImage = imageQRCode;              
-                Pb_Qr_preview.BackgroundImage.Save(Load_diretorio.FullName+"\\"+Tb_Titulo_do_Qr.Text+".png");
+                Pb_Qr_preview.BackgroundImage = imageQRCode;   
+                if(Load_diretorio!=null)Pb_Qr_preview.BackgroundImage.Save(Load_diretorio.FullName+"\\"+Tb_Titulo_do_Qr.Text+".png");
             }
             catch (Exception ex)
             {
